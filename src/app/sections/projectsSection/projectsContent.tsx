@@ -1,0 +1,58 @@
+export const CONTENT = {
+  teleconsultingLanding: {
+    name: "Teleconsulting Hero Section",
+    date: "",
+    description: "",
+    image: "/teleconsulting_landing.png",
+    perso: true,
+  },
+  opticianLanding: {
+    name: "Optician Hero Section",
+    date: "",
+    description: "",
+    image: "/optician_landing.png",
+    perso: true,
+  },
+  photographeAI: {
+    name: "Photographe.ai",
+    date: "",
+    description: "",
+    image: "/teleconsulting_landing.png",
+    perso: false,
+  },
+  linventaire: {
+    name: "L'Inventaire",
+    date: "",
+    description: "",
+    image: "/optician_landing.png",
+    perso: false,
+  },
+  olky: {
+    name: "Olky",
+    date: "",
+    description: "",
+    image: "/optician_landing.png",
+    perso: false,
+  },
+  luo: {
+    name: "Luo",
+    date: "",
+    description: "",
+    image: "/optician_landing.png",
+    perso: false,
+  },
+  mindthreads: {
+    name: "Mindthreads",
+    date: "",
+    description: "",
+    image: "/optician_landing.png",
+    perso: false,
+  },
+  reemployez: {
+    name: "Réemployez",
+    date: "",
+    description: "",
+    image: "/optician_landing.png",
+    perso: false,
+  },
+};
