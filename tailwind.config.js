@@ -14,7 +14,8 @@ module.exports = {
         'primaryColor': "#333135",
         'secondaryColor': "#B2AFB5",
         'pTextColor': "#807B84",
-        'ctaBackground': "#1A191A"
+        'ctaBackground': "#1A191A",
+        'grayColor': '#E6E5E6'
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 20s linear infinite',

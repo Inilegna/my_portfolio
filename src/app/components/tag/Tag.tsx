@@ -6,7 +6,7 @@ interface TagProps {
 }
 
 export default function Tag({ perso }: TagProps) {
-  const persoBackground = "bg-white border border-";
+  const persoBackground = "bg-white border";
   const proBackground =
     " bg-gradient-to-tr from-[#F5E8FD] via-[#FAE8FD] via-33% via-[#FCE8FA] via-66% to-[#FDE7F9] border border-[#F4DFFB]";
   return (

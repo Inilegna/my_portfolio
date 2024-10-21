@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import { getLocale, getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 
 export const metadata: Metadata = {
   title: "Anaël Angelini - Your Design Partner",
@@ -9,14 +11,23 @@ export const metadata: Metadata = {
 
 const jakartaFont = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+
+  // Providing all messages to the client
+  // side is the easiest way to get started
+  const messages = await getMessages();
   return (
     <html lang="en">
-      <body className={jakartaFont.className}>{children}</body>
+      <body className={jakartaFont.className}>
+        <NextIntlClientProvider messages={messages}>
+          {children}
+        </NextIntlClientProvider>
+      </body>
     </html>
   );
 }

@@ -9,7 +9,7 @@ export default function CtaSection({ className }: CtaSectionProps) {
   return (
     <section className={twMerge(className, "lg:py-12")}>
       <div className=" relative overflow-hidden w-full md:h-[600px] bg-ctaBackground rounded-2xl p-12 flex flex-col justify-center">
-        <p className="text-white/50 text-xs font-medium tracking-widest text-center md:text-start mb-3 md:mb-2">
+        <p className="text-white/50 text-xs font-medium tracking-widest text-center md:text-start mb-3">
           CONTACT ME
         </p>
         <h2 className="text-[1.375rem] md:text-[2.5rem] font-medium text-center md:text-start text-white leading-tight">

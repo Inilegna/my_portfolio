@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <div
       className="w-full bg-white bg-opacity-80 backdrop-blur-md fixed inset-x-0 z-30 h-fit mx-auto md:py-3 md:pr-3 md:pl-6
-        bottom-6 md:top-0 md:bottom-0 flex items-center justify-end max-w-[1440px] px-6 lg:px-12 space-x-12 md:space-x-20"
+        bottom-6 md:top-0 md:bottom-0 flex items-center justify-start max-w-[1440px] px-6 lg:px-12 space-x-12 md:space-x-20"
     >
       {/* ----- Icons to other sites & CTA ----- */}
       <div className="flex items-center">

@@ -16,7 +16,7 @@ export default function ProjectsSection({ className }: ProjectsSectionProps) {
 
   return (
     <section className={twMerge(className, "")}>
-      <p className="text-secondaryColor text-xs font-medium tracking-widest text-center md:text-start mb-3 md:mb-2">
+      <p className="text-secondaryColor text-xs font-medium tracking-widest text-center md:text-start mb-3">
         PROJECTS
       </p>
       <h2 className="text-[1.375rem] md:text-[2.5rem] font-medium text-center md:text-start leading-tight md:mb-9">

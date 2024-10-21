@@ -1,0 +1,41 @@
+{
+    "services_section": {
+        "subheader": "SERVICES",
+        "title": "Your Partner In Making Your Products Shine",
+        "subtitle": "I offer a wide range of services from UX-UI design to front-end development, I help businesses create impactful and engaging online experiences.",
+        "services": {
+            "service1": {
+                "name": "UX-UI Design",
+                "description": "I design",
+                "tags": {
+                    "tag1": "Prototypage",
+                    "tag2": "Figma",
+                    "tag3": "Landing Page",
+                    "tag4": "je sais pas"
+                }
+            },
+            "service2": {
+                "name": "Front-End Development",
+                "description": "I provide front-end development services for web and mobile applications, crafting modern, responsive, and highly interactive user interfaces. I prioritize building fast, optimized experiences with a strong focus on performance, accessibility, and SEO.",
+                "tags": {
+                    "tag1": "HTML/CSS",
+                    "tag2": "Tailwind",
+                    "tag3": "JavaScript",
+                    "tag4": "React",
+                    "tag5": "Flutter",
+                    "tag6": "Python"
+                }
+            },
+            "service3": {
+                "name": "Design-To-Code",
+                "description": "I design then I code what I designed",
+                "tags": {
+                    "tag1": "Prototypage",
+                    "tag2": "Figma",
+                    "tag3": "Landing Page",
+                    "tag4": "je sais pas"
+                }
+            }
+        }
+    }
+}
