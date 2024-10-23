@@ -10,7 +10,6 @@ export default function Home() {
     "flex flex-col w-full max-w-[1440px] mx-auto px-6 lg:px-12 text-primaryColor";
   return (
     <main className="w-full mx-auto overflow-hidden relative">
-      <Navbar />
       <HeroSection className={twMerge(sectionClassname)} />
       <ProjectsSection
         className={twMerge(

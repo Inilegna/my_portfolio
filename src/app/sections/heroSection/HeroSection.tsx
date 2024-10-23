@@ -19,14 +19,14 @@ export default function HeroSection({ className }: HeroSectionProps) {
     <section
       className={twMerge(
         className,
-        "h-screen md:max-h-[800px] flex flex-col-reverse md:flex-col"
+        "h-screen md:max-h-[800px] justify-center flex-col-reverse md:flex-col"
       )}
     >
-      <div className="flex-grow flex space-x-6 md:mt-20 animate-infinite-scroll">
+      <div className="flex md:grow space-x-6 md:mt-12 animate-infinite-scroll">
         {projectList.map((project, id) => (
           <div
             key={id}
-            className="flex-grow max-h-[300px] md:max-h-none aspect-[1.6] shadow-lg rounded-2xl"
+            className="h-80 md:h-full md:max-h-none aspect-[1.6] shadow-lg rounded-2xl"
           >
             <img
               src={project.image}
@@ -36,10 +36,16 @@ export default function HeroSection({ className }: HeroSectionProps) {
           </div>
         ))}
       </div>
-      <div className="w-full mt-12 md:mt-14 md:mb-12">
+      <div className="w-full md:mt-14 md:mb-12">
         <AvatarsHero className="mb-3 md:mb-4 md:ml-[3px]" />
         <h1 className={h1Classname}>Elegant design. Fast code.</h1>
-        <h1 className={twMerge(h1Classname, h1Gradient, "mt-2 md:mt-4")}>
+        <h1
+          className={twMerge(
+            h1Classname,
+            h1Gradient,
+            "mt-2 md:mt-4 mb-12 md:mb-0"
+          )}
+        >
           Guaranteed success.
         </h1>
       </div>
