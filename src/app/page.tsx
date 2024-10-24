@@ -1,7 +1,6 @@
 import { twMerge } from "tailwind-merge";
 import HeroSection from "./sections/heroSection/HeroSection";
 import ServicesSection from "./sections/servicesSection/ServicesSection";
-import Navbar from "./components/navbar/Navbar";
 import ProjectsSection from "./sections/projectsSection/ProjectsSection";
 import CtaSection from "./sections/ctaSection/CtaSection";
 
@@ -17,7 +16,7 @@ export default function Home() {
           "flex flex-col justify-center md:my-40"
         )}
       />
-      <ServicesSection className={twMerge(sectionClassname, "md:my-20")} />
+      <ServicesSection className={twMerge(sectionClassname, "md:my-40")} />
       <CtaSection className={twMerge(sectionClassname)} />
     </main>
   );

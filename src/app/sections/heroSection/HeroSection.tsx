@@ -1,8 +1,10 @@
 import AvatarsHero from "@/app/components/avatarsHero/AvatarsHero";
-import PrimaryButton from "@/app/components/buttons/PrimaryButton";
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import { CONTENT } from "../projectsSection/projectsContent";
+import ScreensList from "@/app/components/screensList/ScreensList";
+import { useTranslations } from "next-intl";
+import Navbar from "@/app/components/Navbar/Navbar";
 
 interface HeroSectionProps {
   className?: string;
@@ -14,7 +16,8 @@ export default function HeroSection({ className }: HeroSectionProps) {
   const h1Gradient =
     "bg-gradient-to-b from-[#807B84] via-[#807B84] to-[#B3B0B5] text-transparent bg-clip-text";
 
-  const projectList = Object.values(CONTENT);
+  const t = useTranslations("hero_section");
+
   return (
     <section
       className={twMerge(
@@ -22,33 +25,20 @@ export default function HeroSection({ className }: HeroSectionProps) {
         "h-screen md:max-h-[800px] justify-center flex-col-reverse md:flex-col"
       )}
     >
-      <div className="flex md:grow space-x-6 md:mt-12 animate-infinite-scroll">
-        {projectList.map((project, id) => (
-          <div
-            key={id}
-            className="h-80 md:h-full md:max-h-none aspect-[1.6] shadow-lg rounded-2xl"
-          >
-            <img
-              src={project.image}
-              alt={project.name}
-              className="w-full h-full object-cover rounded-2xl"
-            />
-          </div>
-        ))}
+      <div className="w-full inline-flex flex-nowrap md:grow">
+        <ScreensList />
+        <ScreensList />
       </div>
-      <div className="w-full md:mt-14 md:mb-12">
-        <AvatarsHero className="mb-3 md:mb-4 md:ml-[3px]" />
-        <h1 className={h1Classname}>Elegant design. Fast code.</h1>
-        <h1
-          className={twMerge(
-            h1Classname,
-            h1Gradient,
-            "mt-2 md:mt-4 mb-12 md:mb-0"
-          )}
-        >
-          Guaranteed success.
-        </h1>
+      <div className="md:flex md:justify-between w-full md:mt-14 md:mb-12">
+        <div className="mb-12 md:mb-0">
+          <AvatarsHero className="mb-3 md:mb-4 md:ml-[3px]" />
+          <h1 className={h1Classname}>{t("title1")}</h1>
+          <h1 className={twMerge(h1Classname, h1Gradient, "mt-2 md:mt-4")}>
+            {t("title2")}
+          </h1>
+        </div>
       </div>
+      <Navbar />
     </section>
   );
 }

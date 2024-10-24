@@ -1,4 +1,27 @@
 {
+    "navbar": {
+        "button": "Book a call",
+        "links": {
+            "link1": {
+                "label": "Twitter/X",
+                "href": "https://x.com/angelinianael"
+            },
+            "link2": {
+                "label": "Dribble",
+                "href": "https://dribbble.com/AnaelAng"
+            },
+            "link3": {
+                "label": "LinkedIn",
+                "href": "https://www.linkedin.com/in/anael-angelini/"
+            }
+        }
+    },
+    "hero_section": {
+        "title1": "Elegant design. Fast code.",
+        "title2": "Guaranteed success.",
+        "avatar_part1": "Trusted by",
+        "avatar_part2": "Will you be next?"
+    },
     "services_section": {
         "subheader": "SERVICES",
         "title": "Your Partner In Making Your Products Shine",
@@ -6,12 +29,14 @@
         "services": {
             "service1": {
                 "name": "UX-UI Design",
-                "description": "I design",
+                "description": "I craft user-centered designs that seamlessly blend aesthetics with functionality. From wireframes to high-fidelity prototypes, I ensure every interface is intuitive, engaging, and optimized for the best user experience. My focus is on creating designs that not only look great but also drive interaction and meet business goals.",
                 "tags": {
-                    "tag1": "Prototypage",
-                    "tag2": "Figma",
-                    "tag3": "Landing Page",
-                    "tag4": "je sais pas"
+                    "tag1": "User Research",
+                    "tag2": "Wireframes & Mockups",
+                    "tag3": "Prototypes",
+                    "tag4": "Figma",
+                    "tag5": "Usability Testing",
+                    "tag6": "Interaction Design"
                 }
             },
             "service2": {
@@ -28,12 +53,11 @@
             },
             "service3": {
                 "name": "Design-To-Code",
-                "description": "I design then I code what I designed",
+                "description": "I offer a seamless end-to-end service, where I not only design user-friendly interfaces but also bring them to life through efficient front-end development. From concept to final product, I handle the entire process, ensuring that the final implementation stays true to the original design vision while delivering clean, responsive, and scalable code.",
                 "tags": {
-                    "tag1": "Prototypage",
-                    "tag2": "Figma",
-                    "tag3": "Landing Page",
-                    "tag4": "je sais pas"
+                    "tag1": "Design Implementation",
+                    "tag2": "Design Systems Integration",
+                    "tag3": "UI Animation"
                 }
             }
         }

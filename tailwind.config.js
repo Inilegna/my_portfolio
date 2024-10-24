@@ -17,8 +17,17 @@ module.exports = {
         'ctaBackground': "#1A191A",
         'grayColor': '#E6E5E6'
       },
+      boxShadow:{
+        "screens-illustration":"0 8px 16px 4px rgb(0 0 0 / 0.02)" ,
+        "navbar-shadow": "0 20px 16px -4px rgb(0 0 0 / 0.15);"
+      },
+      screens: {
+        "hero-breakpoint": "1120px",
+        "navbar-breakpoint": "1440px",
+        "navbar-breakpoint-mobile": "480px",
+      },
       animation: {
-        'infinite-scroll': 'infinite-scroll 20s linear infinite',
+        'infinite-scroll': 'infinite-scroll 100s linear infinite',
       },
       keyframes: {
         'infinite-scroll': {
